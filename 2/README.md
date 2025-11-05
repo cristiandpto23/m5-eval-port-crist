@@ -41,5 +41,5 @@ Una consulta para obtener todos los pedidos realizados por un cliente específic
 SELECT p.id_pedido, p.fecha, p.monto
 FROM pedidos AS p
 JOIN clientes AS c ON p.id_cliente = c.id_cliente
-WHERE clientes.nombre = 'Juan Carlos Bodoque';
+WHERE c.nombre = 'Juan Carlos Bodoque';
 ```
