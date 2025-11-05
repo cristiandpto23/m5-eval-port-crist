@@ -4,5 +4,39 @@
 
 ### Utilizar el lenguaje DDL para crear, modificar y eliminar tablas, índices y otros objetos dentro de una base de datos.
 
+crear una tabla de empleados
+
+```sql
+CREATE TABLE empleados (
+    id_empleado SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    salario DECIMAL(10, 2) NOT NULL,
+    fecha_ingreso DATE NOT NULL
+);
+```
+
+modificar la tabla (agregar una nueva columna)
+
+```sql
+ALTER TABLE empleados
+ADD COLUMN departamento VARCHAR(50);
+```
+
+eliminar tabla
+
+```sql
+DROP TABLE empleados;
+```
+
 ---
-### Ejemplo: Crear una tabla 
+
+### Ejemplo: Crear una tabla para almacenar información de empleados, con las columnas correspondientes como nombre, salario y fecha de ingreso.
+
+```sql
+CREATE TABLE empleados (
+    id_empleado SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    salario DECIMAL(10, 2) NOT NULL,
+    fecha_ingreso DATE NOT NULL
+);
+```
